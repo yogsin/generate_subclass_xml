@@ -33,11 +33,11 @@ for VOC_path in DATA_path:
         #print root[0].tag, root[0].text 
         #print "*"*10
         
-        for object in annotation.findall('object'): #找到root节点下的所有country节点 
+        for object in annotation.findall('object'): #找到root节点下的所有object节点 
             #rank = country.find('name').text   #子节点下节点rank的值 
                 #name = country.get('name')      #子节点下属性name的值 
             #print name, rank 
-            name = object.find('name').text   #子节点下节点rank的值 
+            name = object.find('name').text   #子节点下节点name的值 
             print name 
 
         has_cat_or_dog = False
